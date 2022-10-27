@@ -1,0 +1,12 @@
+#   instalra apache
+sudo apt  intall apache 2
+#  habilitar un archivo de configuracion
+include etc/extra/httpd-vhosts.conf
+#  configurar
+sudo  nano  /opt/lampp/etc/extra/httpd-vhosts.conf
+#  configurar archivo
+sudo nano  /etc/host
+#  crear un archivo index.html
+sudo  nano  /var/www/html/index.html
+# reiniciar
+sudo systemctl reiniciar apache 2
