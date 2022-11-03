@@ -1,0 +1,25 @@
+#  instalacion
+zypper install apache 2
+#  inicie el servicio de apache
+systemctl start apache2
+systemctl enable apache2
+systemctl status apache 2
+# configurar con su host llendo a su directorio 
+cd /srv/www/htdocs
+# crear nuevo directorio 
+mkdir  site1
+# crear nuevo archivo en este sitio
+vim site1/index.html
+# salir de este directorio 
+cd
+# ir al directorio apache
+cd /etc/apache2/
+ls 
+# ir al directorio
+cd conf.d/
+# crear un nuevo archivo de configuracion
+vim vhost.conf
+#  ir al achivo de configuracion 
+vim /etc/hosts
+# iniciar el servidor apache
+systemctl restart apache2.service
